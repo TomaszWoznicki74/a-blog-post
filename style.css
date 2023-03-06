@@ -17,6 +17,10 @@ h1{
     letter-spacing: -1.5px;
 }
 
+.info span{
+    color: #e95400;
+}
+
 h2{
     font-size: 50px;
     letter-spacing: -0.5px;
@@ -62,7 +66,9 @@ h6{
 }
 
 .orange{
+    font-family:monospace,serif;
     color: #e95400;
+    font-weight: bold;
 }
 
 

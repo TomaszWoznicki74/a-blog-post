@@ -16,9 +16,7 @@
   <body>
     <h1>A Blog Post</h1>
     <div class="content">
-      <p class="info">
-        12.31.2050 | <span class="orange">ALL ABOUT CSS BLOG</span>
-      </p>
+      <p class="info">12.31.2050 | <span>ALL ABOUT CSS BLOG</span></p>
       <h2>All About Typography</h2>
       <p class="headline">
         Headlines, like this one, are great ways to quickly capture the reader's
@@ -42,8 +40,9 @@
       <p>
         But wait! What if you want more than just normal text on your page?
         Another common thing you might see in web pages are quotes. To make
-        quotes, we can use the blockquote element and style it accordingly, so
-        it stands out a bit as a non-body text quote.
+        quotes, we can use the <span class="orange">blockquote</span> element
+        and style it accordingly, so it stands out a bit as a non-body text
+        quote.
       </p>
       <blockquote class="quote">
         "This is a quote - you probably knew that at a glance since we gave it
@@ -57,15 +56,18 @@
       <hr />
       <h3>a new section</h3>
       <p>
-        And just like that, we've got a new section of content separated by a hr
+        And just like that, we've got a new section of content separated by a
+        <span class="orange">hr</span>
         element (a 'horizontal rule' or a divider) and a new heading. Isn't
         putting content together fun?
       </p>
       <p>
-        Notice as well that when we entered in the H3 content, it was all
-        lowercase, but now it's in a nice Title Case, where the first letter of
-        each word is capitalized. We did that with CSS! Using text-transform:
-        capitalize; we can implement title cased content.
+        Notice as well that when we entered in the
+        <span class="orange">H3</span> content, it was all lowercase, but now
+        it's in a nice Title Case, where the first letter of each word is
+        capitalized. We did that with CSS! Using
+        <span class="orange">text-transform: capitalize;</span> we can implement
+        title cased content.
       </p>
       <h4>Heading 4</h4>
       <p>
@@ -89,45 +91,57 @@
         adipiscing elit.
       </p>
       <h3>Common Font Sizing Approaches</h3>
-      <h4>px (pixels)</h4>
+      <h4><span class="orange">px </span>(pixels)</h4>
       <p>
         Pixels are the simplest way to hard code your font size. By default the
-        browser sets the root font size to 16px, but you can change the font
-        size in the body element or any other HTML element by setting font-size
-        to any number of px.
+        browser sets the root font size to <span class="orange">16px</span>, but
+        you can change the font size in the
+        <span class="orange">body</span> element or any other HTML element by
+        setting <span class="orange">font-size</span> to any number of
+        <span class="orange">px</span>.
       </p>
-      <h4>em</h4>
+      <h4><span class="orange">em</span></h4>
       <p>
-        em units size font relative to the parent element. For example, if the
-        body element is 16px, and a nested div element's font size is set to
-        1.5em, the browser will multiply 16px x 1.5, resulting in 24px font in
-        the div.
+        <span class="orange">em</span> units size font relative to the parent
+        element. For example, if the <span class="orange">body</span> element is
+        <span class="orange">16px</span>, and a nested
+        <span class="orange">div</span> element's font size is set to
+        <span class="orange">1.5em</span>, the browser will multiply 16px x 1.5,
+        resulting in <span class="orange">24px</span> font in the div.
       </p>
-      <h4>rem (root em)</h4>
+      <h4><span class="orange">rem </span>(root em)</h4>
       <p>
-        Root em units are similar to em, but they are relative to the root font
+        Root <span class="orange">em</span> units are similar to
+        <span class="orange">em</span>, but they are relative to the root font
         size instead of the parent element of whatever is being styled. For
-        example, if the root font size (the font size of the body element) is
-        set to 16px, and we have a p element nested many layers down with a
-        font-size set to 2rem, that paragraph will have 32px font. If the body
-        font size ever changes, this paragraph will also change accordingly.
+        example, if the root font size (the font size of the
+        <span class="orange">body</span> element) is set to 16px, and we have a
+        <span class="orange">p</span> element nested many layers down with a
+        font-size set to <span class="orange">2rem</span>, that paragraph will
+        have 32px font. If the body font size ever changes, this paragraph will
+        also change accordingly.
       </p>
       <h4>Which one do I use?</h4>
       <p>
-        Great question! Generally, people try to stick to using em or rem over
-        px, since they make responsive typography that scales up and down across
-        different device widths much easier. Using px for your font sizes is not
-        as dynamic, and you may find that writing media queries to update all
-        the various element font sizes in pixels at different screen widths is
-        not the most scalable approach to typography. Between em and rem, rem
-        has a nice advantage of all elements being relative to one single root
-        font value, where nested elements with parent/child font size
-        dependencies can still be hard to manage with em units. When writing
-        responsive styles, rem allows you to simply update the root font size at
-        different screen sizes and all elements using rem units will adjust
-        themselves accordingly creating a super easy-to-manage typography size
-        system.
+        Great question! Generally, people try to stick to using
+        <span class="orange">em</span> or <span class="orange">rem</span> over
+        <span class="orange">px</span>, since they make responsive typography
+        that scales up and down across different device widths much easier.
+        Using <span class="orange">px</span> for your font sizes is not as
+        dynamic, and you may find that writing media queries to update all the
+        various element font sizes in pixels at different screen widths is not
+        the most scalable approach to typography.
       </p>
+      <p>
+        Between <span class="orange">em</span> and <span class="orange">rem</span>, <span class="orange">rem</span> has a nice advantage of all elements being
+        relative to one single root font value, where nested elements with
+        parent/child font size dependencies can still be hard to manage with <span class="orange">em</span>
+        units. When writing responsive styles, <span class="orange">rem</span> allows you to simply update
+        the root font size at different screen sizes and all elements using <span class="orange">rem</span>
+        units will adjust themselves accordingly creating a super easy-to-manage
+        typography size system.
+      </p>
+
       <p>
         In small projects you may not have an issues hard coding pixelage, but
         it's always important to understand the drawbacks of writing styles that
