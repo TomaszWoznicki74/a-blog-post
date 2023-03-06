@@ -36,6 +36,7 @@ h2{
 }
 
 .headline{
+    font-size: 18px;
     margin: 40px 0;
     text-transform: uppercase;
     font-weight: 500;
